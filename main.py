@@ -14,8 +14,10 @@ from PIL import ImageFont
 with open("secret.json", encoding="utf-8") as f:
     secret = json.load(f)
 
-VISION_ENDPOINT = secret["VISION_ENDPOINT"]
-VISION_KEY = secret["VISION_KEY"]
+VISION_ENDPOINT = st.secrets["VISION_ENDPOINT"]
+VISION_KEY = st.secrets["VISION_KEY"]
+# VISION_ENDPOINT = secret["VISION_ENDPOINT"]
+# VISION_KEY = secret["VISION_KEY"]
 #os.environ["VISION_ENDPOINT"] = secret["VISION_ENDPOINT"]
 #os.environ["VISION_KEY"] = secret["VISION_KEY"]
 
