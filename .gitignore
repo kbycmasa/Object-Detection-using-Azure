@@ -1,0 +1,8 @@
+# 機密情報
+secret.json
+
+# 生成ファイル
+img/
+fonts/
+.venv/
+__pycache__/
